@@ -1,17 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>나는야 버젼1</title>
+  <meta charset="UTF-8" />
+  <title>오늘 뭐하지?</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>나는야 버젼1</h1>
-  <hr>
-  <h2>마이클1이 만든 챕터</h2>
-  <p>
-    너무 재미있다고 강요 중인 우리의 인터넷기초[04]
-  </p>
+  <div class="container">
+    <h1>오늘 뭐하지? 🤔</h1>
+    <form id="activity-form">
+      <label>지금 기분은?</label>
+      <input type="text" id="mood" required />
 
+      <label>지금 시간은?</label>
+      <input type="text" id="time" placeholder="예: 오후 3시" required />
+
+      <label>장소는 어디인가요?</label>
+      <input type="text" id="location" placeholder="예: 집 / 학교 / 카페" required />
+
+      <button type="submit">추천 받기</button>
+    </form>
+
+    <div id="result" class="result"></div>
+  </div>
+
+  <script src="client.js"></script>
 </body>
 </html>
+
